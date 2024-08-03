@@ -6,37 +6,38 @@ public class BlubbleSortInteractive {
     public static void main(String[] args) {
 
         List<String> lista = new ArrayList<>();
-        lista.add("");
-        run(lista);
+        creatingList(lista);
+
+        organizerNames(lista);
+        System.out.println("Names in alphabetical order: "+lista);
     }
 
-    static void run (List<String> lista) {
+    static void creatingList(List<String> lista) {
         boolean control = true;
         while(control) {
-            int option = scanner("Add 1 or stop 2").nextInt();
+            int option = scanner("Type:\n 1 to add a new name \n 2 to stop").nextInt();
+            System.out.println("----------------------------");
             if (option == 1) {
-                addName(lista, scanner("Digite um nome:").nextLine());
-            }else{
+                addName(lista, scanner("Write a name:").nextLine());
+            } else {
                 control = false;
             }
         }
-        organizerNames(lista);
-        System.out.println(lista);
     }
 
     static void addName (List<String> lista, String name){
+        name = name.trim();
         if(!lista.contains(name)) lista.add(name);
     }
 
     static void organizerNames (List<String> lista) {
         for (int i = 0; i < lista.size(); i++) {
-            addName(lista, scanner("Digite um nome:").nextLine());
-            for (int j = 0; j < (lista.size()-1); j++) {
-                if (lista.get(j).compareTo(lista.get(j+1)) > 0) {
-                    String l1 = lista.get(j);
-                    String l2 = lista.get(j+1);
-                    lista.set(j,l2);
-                    lista.set(j+1,l1);
+            for (int count = 0; count < (lista.size()-1); count++) {
+                if (lista.get(count).compareTo(lista.get(count +1)) > 0) {
+                    String l1 = lista.get(count);
+                    String l2 = lista.get(count +1);
+                    lista.set(count,l2);
+                    lista.set(count +1,l1);
                 }
             }
         }

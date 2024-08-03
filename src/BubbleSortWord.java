@@ -1,8 +1,10 @@
 public class BubbleSortWord {
     public static void main(String[] args) {
 
-        String[] names = {"d", "c", "b", "a"};
+        String[] names = {"e", "d", "c", "b", "a"};
         String aux;
+        int control = 0;
+
         System.out.println("Letras fora da ordem: \n"+names[0]+
                 " "+names[1]+" "+names[2]+" "+names[3]);
         for (int i = 0; i < names.length; i++) {
@@ -17,8 +19,9 @@ public class BubbleSortWord {
         }
 
         System.out.println("\nLetras na ordem certa:");
-        for (int i = 0; i < names.length; i++) {
-            System.out.print(names[i]+" ");
+        while ( control < names.length) {
+            System.out.print(names[control]+" ");
+            control++;
         }
     }
 }
