@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7f6c5e26-4446-4343-99d8-f3c94ccee1dd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BlubbleSortInteractive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BlubbleSortInteractive.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BubbleSortWord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BubbleSortWord.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,20 +37,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.BlubbleSortInteractive.executor&quot;: &quot;Run&quot;,
-    &quot;Application.BubbleSortWord.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Zupper/Repositorios_git/BobbleSort/src/Main.java&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.BlubbleSortInteractive.executor": "Run",
+    "Application.BubbleSortInteractive.executor": "Run",
+    "Application.BubbleSortWord.executor": "Run",
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "onboarding.tips.debug.path": "C:/Users/Zupper/Repositorios_git/BobbleSort/src/Main.java"
   }
-}</component>
-  <component name="RunManager" selected="Application.BlubbleSortInteractive">
-    <configuration name="BlubbleSortInteractive" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BlubbleSortInteractive" />
+}]]></component>
+  <component name="RunManager" selected="Application.BubbleSortInteractive">
+    <configuration name="BubbleSortInteractive" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BubbleSortInteractive" />
       <module name="BobbleSort" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -66,7 +66,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BlubbleSortInteractive" />
+        <item itemvalue="Application.BubbleSortInteractive" />
         <item itemvalue="Application.BubbleSortWord" />
       </list>
     </recent_temporary>

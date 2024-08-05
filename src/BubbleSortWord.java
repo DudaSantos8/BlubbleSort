@@ -1,28 +1,28 @@
 public class BubbleSortWord {
     public static void main(String[] args) {
 
-        String[] names = {"e", "d", "c", "b", "a"};
+        String[] listNames = {"k", "c", "a", "d", "b"};
         String aux;
         int control = 0;
 
-        System.out.println("Letras fora da ordem: \n"+names[0]+
-                " "+names[1]+" "+names[2]+" "+names[3]);
-        for (int i = 0; i < names.length; i++) {
+        System.out.println("Letras fora da ordem: \n"+listNames[0]+
+                " "+listNames[1]+" "+listNames[2]+" "+listNames[3]);
+        for (int i = 0; i < listNames.length; i++) {
+            for (int count = 0; count < (listNames.length-1); count++) {
 
-            for (int j = 0; j < (names.length-1); j++) {
-                if (names[j].compareTo(names[j+1]) > 0) {
-                    aux = names[j];
-                    names[j] = names[j+1];
-                    names[j+1] = aux;
+                if (listNames[count].compareTo(listNames[count+1]) < 0) {
+                    aux = listNames[count];
+                    listNames[count] = listNames[count+1];
+                    listNames[count+1] = aux;
                 }
             }
         }
 
         System.out.println("\nLetras na ordem certa:");
-        while ( control < names.length) {
-            System.out.print(names[control]+" ");
+        while ( control < listNames.length) {
+            System.out.print(listNames[control]+" ");
             control++;
         }
     }
 }
-//usar o compareTo para fazer bubbler sort com string
+//usar o compareTo para fazer bubble sort com string
